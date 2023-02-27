@@ -31,14 +31,15 @@ llamarApellido(value:string){
 
 }
 
- constructor(){
+ llamarEdad(valorEdad:number){
+
+ }
+ 
+constructor(){
   
  }
 
- llamarEdad(value:string){
-
- }
-
+ 
 
  ngOnInit(): void {
    

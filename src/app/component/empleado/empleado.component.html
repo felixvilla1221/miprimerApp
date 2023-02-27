@@ -1,7 +1,7 @@
 <p></p>
 <p>Nombre   del Empleado:{{nombre.value}}</p>
 <p>Apellido del Empleado:{{apellido.value}}</p>
-<p>Edad     del Empleado:{{edad.value}}</p>
+<p>Edad     del Empleado:{{edad.valueAsNumber >= 18 ? "mayor edad" : "menor edad"}}</p>
 <p>Empresa  del Empleado:{{empresa.value}}</p>
 
 
@@ -15,4 +15,4 @@ Digite Nombre: <input type="text" #nombre><input type="button" value="Enviar" (c
 Digite Apellido: <input type="text" #apellido><input type="button" value="Enviar" (click)="llamarApellido(apellido.value)"/><br/>
 <br/>
 <br/>
-Digite la Edad: <input type="number" #edad><input type="button" value="Enviar"(click)="llamarEdad(edad.value)">
+Digite la Edad: <input type="number" #edad><input type="button" value="Enviar" (click)="llamarEdad(edad.valueAsNumber)">
