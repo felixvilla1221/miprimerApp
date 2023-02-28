@@ -17,23 +17,20 @@ export class EmpleadoComponent implements OnInit {
 
 
 
-llamarEmpresa(value:string){
 
-}
+// Creacion de Propiedad Binding
+   habilitarCuadroEdad     = true;
+   habilitarCuadroNombre   = true;
+   habilitarCuadroApellido = true;
+   habilitarCuadroEmpresa  = true;
+   usersRegistrado         = true;
+   
+
+   getRegisterUsuario(){
+    this.usersRegistrado = true;
+   }
 
 
-llamarNombre(value:string){
-
-}
-
-
-llamarApellido(value:string){
-
-}
-
- llamarEdad(valorEdad:number){
-
- }
  
 constructor(){
   
@@ -44,5 +41,25 @@ constructor(){
  ngOnInit(): void {
    
  }
+
+
+
+ llamarEmpresa(value:string){
+
+ }
+ 
+ 
+ llamarNombre(value:string){
+ 
+ }
+ 
+ 
+ llamarApellido(value:string){
+ 
+ }
+ 
+  llamarEdad(valor:number){
+ 
+  }
 
 }

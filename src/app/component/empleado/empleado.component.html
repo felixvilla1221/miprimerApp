@@ -6,13 +6,18 @@
 
 
 
-Introduce Empresa: <input type="text" #empresa><input type="button" value="Enviar" (click)="llamarEmpresa(empresa.value)"/>
+Introduce Empresa: <input type="text" #empresa [disabled]="habilitarCuadroEmpresa"><input type="button" value="Enviar" (click)="llamarEmpresa(empresa.value)"/>
 <br/>
 <br/>
-Digite Nombre: <input type="text" #nombre><input type="button" value="Enviar" (click)="llamarNombre(nombre.value)"/><br/>
+Digite Nombre: <input type="text" #nombre [disabled]="habilitarCuadroNombre"><input type="button" value="Enviar" (click)="llamarNombre(nombre.value)"/><br/>
 <br/>
 <br/>
-Digite Apellido: <input type="text" #apellido><input type="button" value="Enviar" (click)="llamarApellido(apellido.value)"/><br/>
+Digite Apellido: <input type="text" #apellido [disabled]="habilitarCuadroApellido" ><input type="button" value="Enviar" (click)="llamarApellido(apellido.value)"/><br/>
 <br/>
 <br/>
-Digite la Edad: <input type="number" #edad><input type="button" value="Enviar" (click)="llamarEdad(edad.valueAsNumber)">
+Digite la Edad: <input type="number" #edad [disabled]="habilitarCuadroEdad"><input type="button" value="Enviar" (click)="llamarEdad(edad.valueAsNumber)">
+<br/>
+<br/>
+
+Registro <input type="checkbox" id="registro" [checked]="usersRegistrado" />
+{{getRegisterUsuario}}
