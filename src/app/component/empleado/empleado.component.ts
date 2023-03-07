@@ -23,11 +23,13 @@ export class EmpleadoComponent implements OnInit {
    habilitarCuadroNombre   = true;
    habilitarCuadroApellido = true;
    habilitarCuadroEmpresa  = true;
-   usersRegistrado         = true;
+   usuarioRegistrado       = false;
    
 
-   getRegisterUsuario(){
-    this.usersRegistrado = true;
+
+   getregistroUsuario(){
+    
+    this.usuarioRegistrado = false;
    }
 
 
