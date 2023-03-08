@@ -24,13 +24,31 @@ export class EmpleadoComponent implements OnInit {
    habilitarCuadroApellido = true;
    habilitarCuadroEmpresa  = true;
    usuarioRegistrado       = false;
-   
+   textoRegistro           = " No existen usuarios Registrados ";
+   textoRegistro2          = " No existe usuarios Registrados";
 
-
+  // funciones
    getregistroUsuario(){
     
     this.usuarioRegistrado = false;
    }
+
+
+   /* setUsuarioRegistrado() {
+    alert("EL USUARIO SE ACABA DE REGISTRAR");
+   } */
+
+
+   setTextoRegistro(){
+    this.textoRegistro = "EL USUARIO SE ACABA DE REGISTRAR";
+   }
+
+
+   setTextoRegistro2(){
+    this.textoRegistro2 = " No existe Usuarios Registrados ";
+   }
+
+
 
 
  

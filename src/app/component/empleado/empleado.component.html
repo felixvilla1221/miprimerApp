@@ -18,6 +18,9 @@ Digite Apellido: <input type="text" #apellido [disabled]="habilitarCuadroApellid
 Digite la Edad: <input type="number" #edad [disabled]="habilitarCuadroEdad"><input type="button" value="Enviar" (click)="llamarEdad(edad.valueAsNumber)">
 <br/>
 <br/>
+<h6>{{textoRegistro}}</h6>
+Registro : <input type="radio" name="nRegistro" id="registro" [checked]="usuarioRegistrado" (click)="setTextoRegistro()"/>
 
-Registro <input type="checkbox" id="registro" [checked]="usuarioRegistrado"/>
+No. Registro : <input type="radio" name="nRegistro" id="registro" [checked]="usuarioRegistrado" (click)="setTextoRegistro2()">
+
 {{getregistroUsuario()}}
