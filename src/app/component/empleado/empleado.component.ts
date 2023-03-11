@@ -24,8 +24,10 @@ export class EmpleadoComponent implements OnInit {
    habilitarCuadroApellido = true;
    habilitarCuadroEmpresa  = true;
    usuarioRegistrado       = false;
-   textoRegistro           = " No existen usuarios Registrados ";
-   textoRegistro2          = " No existe usuarios Registrados";
+   nacionalidadUsuario     = true;
+  //  textoDeRegistro      = "No existen usuarios Registrados";
+  generoUsuario            = "Seleccione su Genero o Sexo"
+   
 
   // funciones
    getregistroUsuario(){
@@ -33,23 +35,46 @@ export class EmpleadoComponent implements OnInit {
     this.usuarioRegistrado = false;
    }
 
+/* 
+   setUsuarioRegistrado() {
+     alert("EL USUARIO SE ACABA DE REGISTRAR");
+     this.textoRegistro = "EL USUARIO SE ACABA DE REGISTRAR";
+   }  */
 
-   /* setUsuarioRegistrado() {
-    alert("EL USUARIO SE ACABA DE REGISTRAR");
+/* 
+   setTextoRegistro(event:Event){
+    
+     
+    // alert(event.target+"MI OBJETO");
+
+    if((<HTMLInputElement>event.target ).value=="si"){
+       this.textoDeRegistro = "El usuario se acaba de registrar";
+    }else{
+      this.textoDeRegistro =  "No existen usuarios Registrados";
+    }
+
+    
+    
+    
    } */
 
 
-   setTextoRegistro(){
-    this.textoRegistro = "EL USUARIO SE ACABA DE REGISTRAR";
+   setGeneroUsuario(event:Event){
+
+    // alert(event.target+ "Mi Objeto")
+
+    if((<HTMLInputElement>event.target).value == "Masculino"){
+      this.generoUsuario = "El genero o sexo Seleccionado fue Masculino"
+    }else{
+      this.generoUsuario = "El genero o sexo Seleccionado fue Femenino"
+    }
+
    }
 
 
-   setTextoRegistro2(){
-    this.textoRegistro2 = " No existe Usuarios Registrados ";
-   }
-
-
-
+  setNacionalidadUsuario(){
+    this.nacionalidadUsuario
+  }
 
  
 constructor(){

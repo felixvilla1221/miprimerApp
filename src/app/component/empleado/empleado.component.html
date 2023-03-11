@@ -18,9 +18,15 @@ Digite Apellido: <input type="text" #apellido [disabled]="habilitarCuadroApellid
 Digite la Edad: <input type="number" #edad [disabled]="habilitarCuadroEdad"><input type="button" value="Enviar" (click)="llamarEdad(edad.valueAsNumber)">
 <br/>
 <br/>
-<h6>{{textoRegistro}}</h6>
-Registro : <input type="radio" name="nRegistro" id="registro" [checked]="usuarioRegistrado" (click)="setTextoRegistro()"/>
+<!-- <h6>{{textoDeRegistro}}</h6>
+ Registro : <input type="radio" value="si" name="nRegistro"  (click)="setTextoRegistro($event)"/> 
+<br>
+No. Registro : <input type="radio" name="nRegistro" value="no" (click)="setTextoRegistro($event)">
 
-No. Registro : <input type="radio" name="nRegistro" id="registro" [checked]="usuarioRegistrado" (click)="setTextoRegistro2()">
-
-{{getregistroUsuario()}}
+{{getregistroUsuario()}} -->
+<h6>{{generoUsuario}}</h6>
+<br>
+Maculino: <input type="radio" name="ngenero" value="Masculino" (click)="setGeneroUsuario($event)"/>
+Femenino: <input type="radio" name="ngenero" value="Femenino" (click)="setGeneroUsuario($event)"/>
+<br>
+Nacionalidad Usuario : <input type="text" name="nnacionalidad" [disabled]="nacionalidadUsuario"/>
